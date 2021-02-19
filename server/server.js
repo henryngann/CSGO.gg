@@ -23,6 +23,18 @@ async function fetchData(platform, id) {
   return response.data.data;
 }
 
+async function fetchSegment(platform, id) {
+  const config = {
+    method: "get",
+    url: `https://public-api.tracker.gg/v2/csgo/standard/profile/${platform}/${id}/segments/weapon`,
+    headers: {
+      "TRN-Api-Key": "4f4dbfbe-8464-455a-a452-e19b640a292e",
+    },
+  };
+  let response = await axios(config);
+  return response.data.data;
+}
+
 //Homepage Route
 app.get("/", (req, res) => {
   console.log("homepage route hit");
@@ -34,5 +46,11 @@ app.get("/", (req, res) => {
 app.get("/profile/:platform/:id", async (req, res) => {
   let data = await fetchData(req.params.platform, req.params.id);
   console.log("Profile Route Hit");
+  res.send(data);
+});
+
+app.get("/profile/:platform/:id/weapon", async (req, res) => {
+  let data = await fetchSegment(req.params.platform, req.params.id);
+  console.log("Segment Route Hit");
   res.send(data);
 });
