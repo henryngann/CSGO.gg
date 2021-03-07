@@ -1,0 +1,92 @@
+.mainbox {
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px;
+  background-color: #e8e8e8;
+  width: 75%;
+  height: 720px;
+  margin: auto;
+  margin-top: 50px;
+  padding: 10px;
+  font-family: "Source Sans Pro", sans-serif;
+}
+.main {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  height: 350px;
+  align-items: center;
+  border-radius: 15px;
+  background-color: #e8e8e8;
+}
+.top {
+  display: flex;
+  color: #666666;
+  justify-content: space-between;
+  font-family: "Source Sans Pro", sans-serif;
+}
+.top h1 {
+  color: #666666;
+  margin-left: 5px;
+  margin-right: 5px;
+  font-family: "Source Sans Pro", sans-serif;
+}
+.first2 {
+  display: flex;
+  flex-direction: column;
+}
+.WinPercentage {
+  margin-left: 50px;
+}
+
+.career {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 15px;
+  height: 50px;
+  align-items: center;
+  padding: 15px;
+  margin-bottom: 5px;
+  background-color: #e8e8e8;
+}
+.career h2 {
+  margin-left: 15px;
+  color: #666666;
+  margin-right: 15px;
+  font-family: "Source Sans Pro", sans-serif;
+}
+.careerdata {
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  border-radius: 15px;
+  align-items: center;
+  padding: 15px;
+  margin-bottom: 5px;
+  background-color: #e8e8e8;
+}
+.careerdata p {
+  color: #666666;
+  margin-left: 15px;
+  margin-right: 15px;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.csgobutton1 {
+  margin-top: 30px;
+  width: 350px;
+  margin-bottom: 30px;
+  border-radius: 15px;
+}
+.csgobutton1:hover {
+  background-color: #666666;
+}
+.csgobutton2 {
+  margin-top: 23.5px;
+
+  width: 330px;
+  height: 34px;
+  border-radius: 15px;
+}
+.csgobutton2:hover {
+}
